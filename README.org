@@ -1,0 +1,17 @@
+#+TITLE: Docker for resin
+
+* Build
+
+  make build
+
+* CONFIGURATION
+
+  start server with port and webapps directory
+
+  #+begin_src sh
+
+  docker start -v /webapps:/resin/webapps -p 8080:8080 jinniahn/resin:3.1.16 
+
+  #+end_src
+
+
